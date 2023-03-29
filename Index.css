@@ -1,0 +1,127 @@
+html {
+    font-family: sans-serif;
+}
+
+body .Grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 445px 191px auto;
+    height: 100vh;
+    margin: 0 auto;
+    width: 90%;
+}
+
+body .Grid nav{
+    background: #0081a7;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+body .Grid section{
+    background: #00afb9;
+    grid-column: 1 / 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+body .Grid aside{
+    background: #f07167;
+    grid-column: 10 / 13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+body .Grid div{
+    background: #fed9b7;
+    grid-column: span 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .Grid footer{
+    background: #0081a7;
+    grid-column: 1 / 13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 1024px) {
+    body .Grid
+    {
+        display: grid;
+        background: rgb(0, 0, 0);
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    body .Grid nav{
+        background: #0081a7;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+    }
+
+    body .Grid section{
+        background: #00afb9;
+        grid-column: 1 / 6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+    }
+
+    body .Grid aside{
+        background: #f07167;
+        grid-column: 6 / 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+    }
+    body .Grid .w1{
+        background: #fed9b7;
+        grid-column: span 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body .Grid .w2{
+        background: #fed9b7;
+        grid-column: span 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body .Grid .w3{
+        background: #fed9b7;
+        grid-column: span 8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body .Grid footer{
+        background: #0081a7;
+        grid-column: 1 / 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+    }
+}
